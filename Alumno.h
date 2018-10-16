@@ -5,13 +5,14 @@
 #ifndef ALUMNO_H
 #define ALUMNO_H
 #include "Persona.h"
+#include "Registro.h"
 #include <iostream>
 #include <stdlib.h>
 #include <string.h>
 #include <string>
 #include <locale.h>
 using namespace std;
-class  Alumno : public Persona {
+class  Alumno : public Persona, public Registro {
 public:
     Alumno(char[], string , string, string);
     Alumno();

@@ -17,6 +17,8 @@ int main(int argc, char** argv) {
     Alumno alumno1=Alumno();
     alumno1.pedirDatosAlumno();
     alumno1.mostrarDatosAlumno();
+    alumno1.setNotas(15,15,12);
+    alumno1.mostrarRegistro();
     return 0;
 }
 

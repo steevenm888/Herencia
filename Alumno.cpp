@@ -10,7 +10,7 @@
 #include <locale.h>
 //desarrollo de la clase alumno
 
-Alumno::Alumno(char ci[], string nom, string ape, string car):Persona( ci, nom, ape){
+Alumno::Alumno(char ci[], string nom, string ape, string car):Persona( ci, nom, ape),Registro(){
     this->carnet=car;
 }
 Alumno::Alumno(){
