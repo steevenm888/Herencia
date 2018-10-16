@@ -8,16 +8,19 @@
 using namespace std;
 class Persona{
 public:
-    Persona(string , string, string);
-    void setCedula(string);
+    Persona(char[], string, string);
+    Persona();
+    void setCedula(char[]);
     void setNombre(string);
     void setApellido(string);
     string getCedula ();
     string getNombre ();
     string getApellido ();
+    bool verificarCedula(char _cedula[]);
+    void pedirDatosPersona();
     void mostrarDatosPersona();
 private:
-    string cedula;
+    char cedula[10];
     string apellido;
     string nombre;
 };

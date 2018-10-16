@@ -9,10 +9,12 @@
 using namespace std;
 class  Alumno : public Persona {
 public:
-    Alumno(string, string , string, string);
+    Alumno(char[], string , string, string);
+    Alumno();
     void setCarnet(string);
     string getCarnet ();
     void mostrarDatosAlumno();
+    void pedirDatosAlumno();
 private:
     string carnet;
     

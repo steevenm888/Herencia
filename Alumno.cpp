@@ -5,8 +5,12 @@
 #include <string>
 #include <locale.h>
 //desarrollo de la clase alumno
-Alumno::Alumno(string ci, string nom, string ape, string car):Persona( ci, nom, ape){
+
+Alumno::Alumno(char ci[], string nom, string ape, string car):Persona( ci, nom, ape){
     this->carnet=car;
+}
+Alumno::Alumno(){
+
 }
 void Alumno::setCarnet(string car){
     carnet=car;
@@ -17,10 +21,15 @@ string Alumno::getCarnet(){
     return carnet;
 }
 //desarrollo del metodo mostrar persona
+void Alumno::pedirDatosAlumno(){
+    pedirDatosPersona();
+    cout<<"Ingrese su carnet"<<endl;
+    cin>>carnet;
+}
 void Alumno::mostrarDatosAlumno(){
     setlocale(LC_ALL,"");
     mostrarDatosPersona();
-    cout<<"\n"<<"Carnet"<<getCarnet()<<endl;
+    cout<<"\n"<<"Carnet  "<<getCarnet()<<endl;
 }
 
 
