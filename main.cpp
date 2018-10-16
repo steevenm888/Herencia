@@ -1,3 +1,7 @@
+/*Universidad de las Fuerzas Armadas ESPE
+ Autores: Shakira Cofre, Guillermo Casanova, Esteban Molina
+ Fecha de creación: 15-10-2018  Fecha de modificación: 15-10-2018
+ Problema: Verificar un número de cédula de una persona que es un estudiante y sacar el promedio de sus notas.*/
 #include <cstdlib>
 #include <iostream>
 #include <stdlib.h>
